@@ -11,19 +11,42 @@ import (
 //
 func main() {
 
-	http.HandleFunc("/", HelloServer)
+	//
+	http.HandleFunc("/", helloServerFunc)
+	http.HandleFunc("/user", gitHubUserFunc)
+	http.HandleFunc("/org", gitHubOrganizationFunc)
+	http.HandleFunc("/repos", gitHubRepositoryFunc)
 
+	//
 	http.ListenAndServe(":80", nil)
 }
 
 //
-func HelloServer(w http.ResponseWriter, r *http.Request) {
+func helloServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
 	//t := template.New("Label de ma template")
 
-	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+	fmt.Fprintf(w, "Hello, world !")
 
 	//
 	//t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
+}
+
+//
+func gitHubUserFunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub user function")
+}
+
+//
+func gitHubOrganizationFunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub organization function")
+}
+
+//
+func gitHubRepositoryFunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub repository function")
 }
