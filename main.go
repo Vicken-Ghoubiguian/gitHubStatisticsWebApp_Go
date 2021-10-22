@@ -3,7 +3,8 @@ package main
 
 //
 import (
-	"html/template"
+	//"html/template"
+	"fmt"
 	"net/http"
 )
 
@@ -19,8 +20,10 @@ func main() {
 func HelloServer(w http.ResponseWriter, r *http.Request) {
 
 	//
-	t := template.New("Label de ma template")
+	//t := template.New("Label de ma template")
+
+	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 
 	//
-	t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
+	//t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 }
