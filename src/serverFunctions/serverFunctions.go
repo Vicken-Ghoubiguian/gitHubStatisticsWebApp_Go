@@ -35,3 +35,15 @@ func GitHubRepositoryFunc(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "GitHub repository function")
 }
+
+//
+func GitHubCommitfunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub commit function")
+}
+
+//
+func GitHubLanguagefunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub language function")
+}
