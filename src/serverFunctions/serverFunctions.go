@@ -59,3 +59,9 @@ func GitHubLicensefunc(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "GitHub license function")
 }
+
+//
+func GitHubCommentfunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub comment function")
+}

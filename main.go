@@ -20,6 +20,7 @@ func main() {
 	http.HandleFunc("/lang", serverFunctions.GitHubLanguagefunc)
 	http.HandleFunc("/issue", serverFunctions.GitHubIssuefunc)
 	http.HandleFunc("/license", serverFunctions.GitHubLicensefunc)
+	http.HandleFunc("/comment", serverFunctions.GitHubCommentfunc)
 
 	//
 	http.ListenAndServe(":80", nil)
