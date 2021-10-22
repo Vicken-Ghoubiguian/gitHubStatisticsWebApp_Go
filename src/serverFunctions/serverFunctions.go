@@ -47,3 +47,15 @@ func GitHubLanguagefunc(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "GitHub language function")
 }
+
+//
+func GitHubIssuefunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub issue function")
+}
+
+//
+func GitHubLicensefunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub license function")
+}
