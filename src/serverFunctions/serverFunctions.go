@@ -93,5 +93,5 @@ func GitHubEmojisfunc(w http.ResponseWriter, r *http.Request) {
 	//
 	//getEmojisFromGitHubAPIJsonString, err := ioutil.ReadAll(getEmojisFromGitHubAPIResp.Body)
 
-	fmt.Fprintf(w, getEmojisFromGitHubAPIRequest)
+	fmt.Fprintf(w, "%s", getEmojisFromGitHubAPIRequest)
 }
