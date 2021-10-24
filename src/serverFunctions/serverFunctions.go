@@ -80,3 +80,9 @@ func GitHubFilefunc(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "GitHub file function")
 }
+
+//
+func GitHubEmojisfunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub emojis function")
+}

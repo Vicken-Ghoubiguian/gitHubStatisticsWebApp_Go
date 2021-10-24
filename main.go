@@ -22,6 +22,7 @@ func main() {
 	http.HandleFunc("/comment", serverFunctions.GitHubCommentfunc)
 	http.HandleFunc("/branch", serverFunctions.GitHubBranchfunc)
 	http.HandleFunc("/file", serverFunctions.GitHubFilefunc)
+	http.HandleFunc("/emojis", serverFunctions.GitHubEmojisfunc)
 
 	//
 	http.ListenAndServe(":80", nil)
