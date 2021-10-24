@@ -15,6 +15,14 @@ func HelloServerFunc(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello, world !")
 
 	//
+	if r.URL.Path != "/" {
+
+		http.NotFound(w, r)
+
+		fmt.Fprintf(w, "Error ? Yeah....")
+	}
+
+	//
 	//t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 }
 
