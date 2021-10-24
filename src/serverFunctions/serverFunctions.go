@@ -12,14 +12,17 @@ func HelloServerFunc(w http.ResponseWriter, r *http.Request) {
 	//
 	//t := template.New("Label de ma template")
 
-	fmt.Fprintf(w, "Hello, world !")
-
 	//
 	if r.URL.Path != "/" {
 
-		http.NotFound(w, r)
+		//http.NotFound(w, r)
 
 		fmt.Fprintf(w, "Error ? Yeah....")
+
+		//
+	} else {
+
+		fmt.Fprintf(w, "Hello, world !")
 	}
 
 	//
