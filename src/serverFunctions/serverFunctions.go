@@ -10,12 +10,7 @@ import (
 func HelloServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
-	//t := template.New("Label de ma template")
-
-	//
 	if r.URL.Path != "/" {
-
-		//http.NotFound(w, r)
 
 		fmt.Fprintf(w, "Error ? Yeah....")
 
@@ -24,9 +19,6 @@ func HelloServerFunc(w http.ResponseWriter, r *http.Request) {
 
 		fmt.Fprintf(w, "Hello, world !")
 	}
-
-	//
-	//t = template.Must(t.ParseFiles("tmpl/main.tmpl"))
 }
 
 //
