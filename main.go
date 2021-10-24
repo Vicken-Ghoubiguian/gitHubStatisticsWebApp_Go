@@ -21,6 +21,8 @@ func main() {
 	http.HandleFunc("/issue", serverFunctions.GitHubIssuefunc)
 	http.HandleFunc("/license", serverFunctions.GitHubLicensefunc)
 	http.HandleFunc("/comment", serverFunctions.GitHubCommentfunc)
+	http.HandleFunc("/branch", serverFunctions.GitHubBranchfunc)
+	http.HandleFunc("/file", serverFunctions.GitHubBranchfunc)
 
 	//
 	http.ListenAndServe(":80", nil)

@@ -65,3 +65,15 @@ func GitHubCommentfunc(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "GitHub comment function")
 }
+
+//
+func GitHubBranchfunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub branch function")
+}
+
+//
+func GitHubFilefunc(w http.ResponseWriter, r *http.Request) {
+
+	fmt.Fprintf(w, "GitHub file function")
+}
