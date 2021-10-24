@@ -7,7 +7,7 @@ import (
 )
 
 //
-func HelloServerFunc(w http.ResponseWriter, r *http.Request) {
+func RootServerFunc(w http.ResponseWriter, r *http.Request) {
 
 	//
 	if r.URL.Path != "/" {

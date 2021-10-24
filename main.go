@@ -11,7 +11,7 @@ import (
 func main() {
 
 	//
-	http.HandleFunc("/", serverFunctions.HelloServerFunc)
+	http.HandleFunc("/", serverFunctions.RootServerFunc)
 	http.HandleFunc("/user", serverFunctions.GitHubUserFunc)
 	http.HandleFunc("/org", serverFunctions.GitHubOrganizationFunc)
 	http.HandleFunc("/repos", serverFunctions.GitHubRepositoryFunc)
