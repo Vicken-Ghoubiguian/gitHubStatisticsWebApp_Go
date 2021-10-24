@@ -87,5 +87,8 @@ func GitHubEmojisfunc(w http.ResponseWriter, r *http.Request) {
 	//
 	getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
 
+	//
+	//getEmojisFromGitHubAPIResp, err := http.Get(getEmojisFromGitHubAPIRequest)
+
 	fmt.Fprintf(w, getEmojisFromGitHubAPIRequest)
 }
