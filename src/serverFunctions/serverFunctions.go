@@ -84,5 +84,8 @@ func GitHubFilefunc(w http.ResponseWriter, r *http.Request) {
 //
 func GitHubEmojisfunc(w http.ResponseWriter, r *http.Request) {
 
-	fmt.Fprintf(w, "GitHub emojis function")
+	//
+	getEmojisFromGitHubAPIRequest := "https://api.github.com/emojis"
+
+	fmt.Fprintf(w, getEmojisFromGitHubAPIRequest)
 }
